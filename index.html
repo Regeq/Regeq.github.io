@@ -46,6 +46,7 @@
             background-color: #FFA500;
             padding: 5px;
             border-radius: 5px;
+            margin-top: 10px; /* Přidáno pro větší mez mezi copyright a lištou */
         }
     </style>
 </head>
@@ -55,7 +56,15 @@
     </header>
 
     <nav>
-        <!-- Odkazy na sekce zůstávají stejné -->
+        <a href="#about-us" onclick="showSection('about-us')">O nás</a>
+        <a href="#projects" onclick="showSection('projects')">Projekty</a>
+        <a href="#contact" onclick="showSection('contact')">Kontakt</a>
+        <a href="#blog" onclick="showSection('blog')">Blog</a>
+        <a href="#references" onclick="showSection('references')">Reference</a>
+        <a href="#social-media" onclick="showSection('social-media')">Sociální média</a>
+        <a href="#gallery" onclick="showSection('gallery')">Galerie</a>
+        <a href="#technologies" onclick="showSection('technologies')">Technologie</a>
+        <a href="#downloads" onclick="showSection('downloads')">Stažení</a>
     </nav>
 
     <section id="about-us">
