@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afton Robotics</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2d2d2d;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #FFA500;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        button {
+            background-color: #FFA500;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px; /* Zaoblené rohy */
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #333;
+            color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Afton Robotics</h1>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in making programs and robots. Feel free to ask us!</p>
+        <button onclick="showSection('contact')">Learn More</button>
+    </section>
+
+    <section id="contact" style="display:none;">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:regeq@seznam.cz">regeq@seznam.cz</a></p>
+        <button onclick="showSection('about')">Contact Us</button>
+    </section>
+
+    <footer>
+        &copy; Afton Robotics 2023
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
