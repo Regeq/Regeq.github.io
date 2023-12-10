@@ -1,9 +1,8 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tagy a další hlavičkové informace -->
-    <title>Vítejte na naší stránce</title>
+    <title>Afton Robotics</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         /* Přidejte CSS styly pro vylepšení vzhledu */
         body {
@@ -46,50 +45,56 @@
             background-color: #FFA500;
             padding: 5px;
             border-radius: 5px;
-            margin-top: 10px; /* Přidáno pro větší mez mezi copyright a lištou */
+            margin-top: 10px; 
         }
         section {
             display: none;
         }
     </style>
-    <script>
-        function showSection(sectionId) {
-            // Načti obsah sekce pomocí AJAX nebo jiné metody
-            fetch(sectionId + '.html')
-                .then(response => response.text())
-                .then(data => {
-                    // Zobraz obsah v elementu s ID "section-container"
-                    document.getElementById('section-container').innerHTML = data;
-                });
-        }
-    </script>
 </head>
-<body onload="showSection('home');">
+<body>
     <header>
         <h1>Afton Robotics</h1>
     </header>
 
     <nav>
-        <a href="home.html" onclick="showSection('home')">Home</a>
-        <a href="about-us.html" onclick="showSection('about-us')">About Us</a>
-        <a href="projects.html" onclick="showSection('projects')">Projects</a>
-        <a href="contact.html" onclick="showSection('contact')">Contacts</a>
-        <a href="blog.html" onclick="showSection('blog')">Blog</a>
-        <a href="references.html" onclick="showSection('references')">References</a>
-        <a href="socials.html" onclick="showSection('socials')"*>Socials</a>
-        <a href="gallery.html" onclick="showSection('gallery')">Gallery</a>
-        <a href="technologies.html" onclick="showSection('technologies')">Technologies</a>
-        <a href="downloads.html" onclick="showSection('downloads')">Downloads</a>
-        <!-- Další odkazy pro další sekce -->
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#about-us" onclick="showSection('about-us')">About Us</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <!-- Přidejte odkazy na ostatní stránky zde -->
     </nav>
 
-    <!-- Placeholder pro obsah jednotlivých sekcí -->
-    <div id="section-container"></div>
+    <!-- Sekce pro různé informace -->
+    <section id="home">
+        <h2>Welcome to Afton Robotics</h2>
+        <p>Explore the world of technology with us. We create innovative solutions for your needs.</p>
+        <p>Feel free to navigate through different sections to learn more about us and our projects.</p>
+    </section>
+
+    <section id="about-us">
+        <h2>About us</h2>
+        <p>We are a team made of pure love for technology. We make robots, software, and bots.</p>
+        <p>In our company, we love making everything easy and simple (not the robots). We also love when everything is clean and beautiful.</p>
+    </section>
+
+    <!-- Další obsah jednotlivých sekcí -->
 
     <footer>
         <div id="copyright">
             &copy; Afton Robotics 2023
         </div>
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Skryj všechny sekce
+            document.querySelectorAll('section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Zobraz vybranou sekci
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
