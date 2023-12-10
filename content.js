@@ -11,5 +11,12 @@ const content = {
     <p>We are a team made of pure love for technology. We make robots, software, and bots.</p>
     <p>In our company, we love making everything easy and simple (not the robots). We also love when everything is clean and beautiful.</p>
   `,
-  // Další sekce
-};
+  projects: `
+    <h2>Projects<h2>
+    <p>You can find iformations about our latest projects!<p>
+  `,
+  downloads: `
+  <h2>Downloads<h2>
+  <p>Here are all our dricers and software we sent to public. You can click on name of the project and find versions you can download.<p>
+    
+    };
