@@ -1,93 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Afton Robotics</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Přidejte CSS styly pro vylepšení vzhledu */
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-            background-color: #2d2d2d;
-            color: #fff;
-        }
-        header {
-            background-color: #FFA500;
-            padding: 10px;
-            text-align: center;
-        }
-        nav {
+            margin: 0;
+            padding: 0;
+            background-image: url('url_k_obrazku.jpg'); /* Změňte 'url_k_obrazku.jpg' na skutečnou URL obrázku */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
             display: flex;
-            justify-content: space-around;
-            background-color: #333;
-            padding: 10px;
-        }
-        nav a {
+            align-items: center;
+            justify-content: center;
             color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        footer {
-            background-color: #333;
-            padding: 10px;
-            color: white;
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
-        #copyright {
-            background-color: #FFA500;
-            padding: 5px;
-            border-radius: 5px;
-            margin-top: 10px; 
-        }
-        section {
-            display: none;
+
+        .poetry-text {
+            background: rgba(0, 0, 0, 0.7); /* Průhledné pozadí pro text */
+            padding: 20px;
+            border-radius: 10px;
         }
     </style>
+    <title>Moje básnická stránka</title>
 </head>
 <body>
-    <header>
-        <h1>Afton Robotics</h1>
-    </header>
-
-    <nav>
-        <a href="#home" onclick="loadContent('home.html')">Home</a>
-        <a href="#about-us" onclick="loadContent('about-us.html')">About Us</a>
-        <a href="#projects" onclick="loadContent('projects.html')">Projects</a>
-        <a href="#references" onclick="loadContent('references.html')">References</a>
-        <a href="#blog" onclick="loadContent('blog.html')">Blog</a>
-        <a href="#downloads" onclick="loadContent('downloads.html')">Downloads</a>
-        <a href="#tech" onclick="loadContent('technologies.html')">Technologies</a>
-        <a href="#gallery" onclick="loadContent('gallery.html')">Gallery</a>
-        <a href="#contacts" onclick="loadContent('contacts.html')">Contacts</a>
-    </nav>
-
-    <div id="content-container">
-        <!-- Obsah se bude sem načítat -->
+    <div class="poetry-text">
+        <h1>Má básnická stránka</h1>
+        <p>Tady můžete vložit svou básnickou tvorbu nebo text básně.</p>
     </div>
-
-    <footer>
-        <div id="copyright">
-            &copy; Afton Robotics 2023
-        </div>
-    </footer>
-
-    <script>
-        function loadContent(page) {
-            // Načtěte obsah stránky
-            fetch(page)
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById('content-container').innerHTML = html;
-                });
-        }
-    </script>
 </body>
 </html>
