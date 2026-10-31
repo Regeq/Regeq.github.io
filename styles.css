@@ -9,12 +9,6 @@
 
   color: aliceblue;
   margin: 10px 0px 10px 20px;
-
-  -webkit-user-select: none;    
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default
 }
 
 body {
@@ -36,6 +30,12 @@ body {
   border: 1.5px solid #111111;
   border-radius: 20px;
   margin: 10px;
+
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default
 }
 
 .navbar a {
