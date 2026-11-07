@@ -19,6 +19,7 @@ body {
   background: #152331;
   background: -webkit-linear-gradient(to right, #000000, #152331);
   background: linear-gradient(to right, #000000, #152331);
+  align-items: center;
 }
 
 .navbar {
@@ -61,4 +62,34 @@ body {
   display: flex;
   border-radius: 20px;
   align-items: stretch;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #1f1f1f95;
+  width: 70rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: 1px solid #111111;
+  color: #eeeeee;
+  text-align: center;
+  
+}
+
+.main-content h2 {
+  font-size: 40px;
+  padding: 0;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.main-content p {
+  padding: 0.5rem 2rem;
+  font-size: 25px;
 }
